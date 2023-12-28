@@ -51,18 +51,26 @@ Function members for this phase include:
 the file. This function is for debugging. It is not part of the compression algorithm. Code will
 be added to this function in later assignments.
 3. A private worker function named doTally().
+
 (a) Read the input file one character at a time, in a way that does not skip whitespace.
+
 (b) Use the character code to subscript the tally array, and add 1 to the appropriate array slot.
+
 (c) When eof is found, make your input file so that it is ready to read again by seeking to 0
 bytes from the beginning of the file: streamName.seekg (0, is.beg);
 4. A public worker function named compress. This is the primary function that implements the
 application. It will be called from main and it calls all other major functions. At this time
 implement the following:
+
 (a) Call doTally(). When it returns, print the results of the tally, including the number of
 characters in the input file.
+
 (b) Call the Heap constructor with a pointer to the tally array as its parameter.
+
 (c) Call heapify(); it must return a Node* (alias Tree) that is the root of a HuffTree.
+
 (d) When heapify() returns, call Heap::print().
+
 (e) Calls on other phases of the program will be added here, as the project develops.
 
 Sample data. Below is a text that will be used to illustrate all phases of this process. Please note
