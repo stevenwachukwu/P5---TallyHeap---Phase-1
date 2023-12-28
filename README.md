@@ -9,19 +9,22 @@ Coding this multi-step algorithm will be your work for the next month. In the pr
 use several major data structures and produce a bit-oriented output file. The UML diagram below
 shows the overall architecture of the completed project. The green and yellow parts will be created in
 Program 5.
+
 2 Goals of Program 5
 1. To use a command-line argument for main(), the name of the file to be compressed.
 2. To write the first two phases of a file compression program that we be further developed in
 programs 6 and 7.
 3. To use characters as subscripts for an array.
 4. To implement / adapt the heap algorithms.
-5. 2.1 The main Program
+   
+2.1 The main Program
 The main program. In main():
 1. Call banner()
 2. Then pick up the name of the input file from the command line. Call the Huffman constructor
 with this file name as its parameter.
 3. Call Huffman::compress().
 4. Call bye() and end execution.
+
 2.2 P5 Phase 1: The Initial Tally
 In this phase, you will count the number of times each character appears in a text file. Debug this
 before you start Phase 2.
