@@ -64,9 +64,11 @@ characters in the input file.
 (c) Call heapify(); it must return a Node* (alias Tree) that is the root of a HuffTree.
 (d) When heapify() returns, call Heap::print().
 (e) Calls on other phases of the program will be added here, as the project develops.
+
 Sample data. Below is a text that will be used to illustrate all phases of this process. Please note
 that this IS NOT the required input file to be used for submission of your project.
 Morals rule everything! (Or is it money?)
 The non-zero results of tallying our text are shown below in ASCII sequence order:
+
 ! ( ) ? ’ ’ M O a e g h i l m n o r s t u v y
 1 1 1 1 6 1 1 1 4 1 1 3 2 1 2 2 4 2 2 1 1 2
